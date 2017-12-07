@@ -1,5 +1,5 @@
 # onepressjump
-Child Theme of Onepress for use in www.jump.web.id
+Child Theme of Onepress (https://github.com/FameThemes/onepress) for use in www.jump.web.id
 
 How to install:
 1. You need to first install Onepress theme manually or from your Wordpress admin dashboard
