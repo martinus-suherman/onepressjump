@@ -21,18 +21,6 @@ window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){va
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
-<script type="text/javascript">
-// Feature detects Navigation Timing API support.
-if (window.performance) 
-{
-  // Gets the number of milliseconds since page load
-  // (and rounds the result since the value must be an integer).
-  var timeSincePageLoad = Math.round(performance.now());
-
-  // Sends the timing hit to Google Analytics.
-  ga('send', 'timing', 'Head Load', 'head-load', timeSincePageLoad);
-}
-</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -41,9 +29,7 @@ if (window.performance)
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'onepress' ); ?></a>
     <?php
     /**
-     * Hooked: onepress_site_header
-     *
-     * @see onepress_site_header
+     * @since 2.0.0
      */
-    do_action( 'onepress_site_start' );
+    onepress_header();
     ?>

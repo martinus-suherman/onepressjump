@@ -12,11 +12,6 @@ function onepress_jump_setup()
 	remove_image_size( 'onepress-blog-small' );
 	remove_image_size( 'onepress-small' );
 	remove_image_size( 'onepress-medium' );
-	
-	// add_image_size( 'onepress-medium', 640, 400, true );
-	// add_image_size( 'onepress-blog-small', 150, 150, true );
-	// add_image_size( 'onepress-small', 300, 300, true );
-
 }
 add_action( 'after_setup_theme', 'onepress_jump_setup', 50 );
  
